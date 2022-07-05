@@ -1,0 +1,37 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Plan du site{% endblock %}
+
+{% block content %}
+<br>
+<h6><a class="help_links" href="{{ path('home') }}">ACCUEIL</a></h6>
+    <p>Retrouvez <a class="plan" href="{{ path('home') }}">ici</a> nos nouveautés, nos produits à la une et nos exclusivités</p>
+<hr>
+<h6><a class="help_links" href="{{ path('about') }}">A PROPOS</a></h6>
+    <p>Qui sommes-nous? Quelles sont nos valeurs?</p>
+<hr>
+<h6><a class="help_links" href="{{ path('products') }}">BOUTIQUE</a></h6>
+    <p>Vous avez ici accès à toute notre gamme de produits de soins du corps & visage</p>
+    <ul>
+        <li>
+            <p>
+                <a class="plan" href="{{ path('products_visage') }}">Soins visage</a></p></li>
+                <p>Soins pour les yeux, la zone T et lèvres</p>
+        <li>
+            <p>
+                <a class="plan" href="{{ path('products_corps') }}">Soins corps</a></p></li>
+                <p>Soins pour les jambes, le dos, le ventre et les mains</p>
+    </ul>
+<hr>
+<h6><a class="help_links" href="{{ path('advice') }}">CONSEILS BEAUTE</a></h6>
+    <p>Retrouvez ici tous nos conseils selon votre type de peau!</p>
+<hr>
+<h6><a class="help_links" href="{{ path('contact') }}">CONTACT</a></h6>
+    <p>Vous avez une requête spécifique,n'hésitez pas à nous contacter en remplissant notre formulaire de contact.
+    Nous restons à votre écoute.
+    </p>
+<hr>
+<h6><a class="help_links" href="{{ path('app_login') }}">CONNEXION</a> | <a class="help_links" href="{{ path('app_register') }}">INSCRIPTION</a></h6>
+<br>
+
+{% endblock %}

@@ -1,0 +1,35 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Ma commande{% endblock %}
+
+{% block content %}
+    <br/>
+    <h2>Ma commande</h2>
+    <p>Choississez vos préférences avant de passer votre commande sur la boutique HelssySkin.</p>
+    <hr>
+    <div class="row">
+        <div class="col-md-6">
+            {% set formHTML %}
+                {{ form_start(form, { action: path('order_recap, methods={"POST"}' )}) }} 
+                    {{ form_label(form.addresses, 'Choisissez votre adresse de livraison') }}
+                    <a href="{{ path('add_address') }}" style="color:blue">+ Ajouter une nouvelle adresse</a>
+                {{ form_end(form) }}
+            {% endset %}
+            {# Je veux que tu me remplaces ça pas ça & puis je veux que tu m'interprêtes le html #}
+            {{ formHTML |replace({'[br]':'<br/>'})|raw }}
+        </div>
+        <div class="col-md-6">
+            <b>Récapitulatif de ma commande</b><br>
+            <div class="order-summary">
+                {% for product in cart %}
+                    <div class="row">
+                        <div class="col-3 my-2"><img src="/img/img_products/{{ product.product.illustration }}" alt="{{ product.product.name }}" height="80px"></div>
+                        <div class="col-7 my-auto">{{ product.product.name }}<br><small>{{ product.product.subtitle }}</small>
+                        </div>
+                        <div class="col-2 my-auto">x {{ product.quantity }}</div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+{% endblock %}

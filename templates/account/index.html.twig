@@ -1,0 +1,40 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Mon compte HelssySkin{% endblock %}
+
+{% block content %}
+    <br/>
+    <h1>Mon espace personnel</h1><br>
+    {# {% if is_granted('ROLE_ADMIN') %} 
+        <small><a href="/admin">Vous êtes un administrateur, accéder au backoffice ?</a></small><br>
+    {% endif %} #}
+    
+        <div class="bienvenue_user">Bienvenue " {{ app.user.firstname }} " dans votre espace membre HelssySkin!<br><br><br>
+        Sur votre espace personnel, vous pouvez accèder à certaines fonctionnalités de gestion de votre compte.<br><br>En effet, les paramètres de votre compte, vous donne accès depuis votre espace client HelssySkin à la gestion des paramètres ci-dessous.<hr>
+            <img src="{{ ('img/espace-client.png') }}" width="250px" height="220px" style="border-radius:10px" alt="espace_client"></div>
+    <hr>
+    <p>Depuis votre espace client, vous pourrez donc gérer et accèder à :</p><br>
+    <div class="user_acces">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="account-item text-center">
+                    <a href="{{ path('account_password') }}">Modification mot de passe</a><br>
+                    <img src="{{ ('img/img_icons/padlock.png') }}" alt="Modifier mdp">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="account-item text-center">
+                    <a href="{{ path('account_address') }}">Gérer mes adresses</a><br>
+                    <img src="{{ ('img/img_icons/map.png') }}" alt="Gérer adresses">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="account-item text-center">
+                    <a href="{{ path('account_order') }}">Mes commandes</a><br>
+                    <img src="{{ ('img/img_icons/received.png') }}" alt="Consulter commandes">
+                </div>
+            </div>
+        </div>
+    </div>
+    </br></br><br/><br/>
+{% endblock %}

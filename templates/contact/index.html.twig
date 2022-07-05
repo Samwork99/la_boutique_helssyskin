@@ -1,0 +1,45 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Contactez-nous{% endblock %}
+
+{% block content %}
+    <body id="first_contact">
+        <div class="container">
+            <br/>
+            <div class="row justify-content-center">
+                <div class="col-md-8 col-xl-6 my-3">
+                    <div class="block-small">
+                        <form name="contact_form" method="post" id="page-contact" class="mask-custom rounded-5 shadow-5-strong p-5 mb-5" >
+                        <br>
+                            <h2 class="title_contact">Nous contacter</h2>
+                                <p class="flash_message">N'hésitez pas à prendre contact avec notre équipe, nous vous répondrons dans les plus brefs délais.</p>
+
+                            {% for message in app.flashes('notice') %}
+                                <div class="alert-info">{{ message }}</div>
+                            {% endfor %}
+                            {# {% if notification %}
+                            <div class="alert-info">{{ notification }}</div>
+                            {% endif %} #}
+
+                            <div class="col-md-12">{{ form(form) }}</div>
+                        </form>
+                    </div>
+                </div>
+                <br>
+                <div class="col-md-4">
+                    <br>
+                    <h3 class="title_contact">La boutique HelssySkin</h3>
+                    <hr>
+                        <p class="contact_us">28 rue du général Leclerc<br>
+                        77 000 MELUN<br>
+                        contact@helssyskin.fr<br>
+                        09 67 35 44 58</p>
+                    <hr>
+                        <p class="contact_us">Vous pouvez nous appeler du :<br/><br/>
+                        - Lundi au vendredi de 10h-19h<br>
+                        - Samedi de 9h-12h</p>
+                </div>
+            </div>
+        </div>
+    </body>
+{% endblock %}

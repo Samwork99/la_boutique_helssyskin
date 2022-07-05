@@ -1,0 +1,882 @@
+/* ========================================== HEADER (NAVBAR) ================================================ */
+body{
+    background-color:#E3BC9A;
+}
+
+.navbar-item-custom, .navbar-item-custom a {
+    color:white; 
+    font-weight:bold;
+    font-size:16px;
+    text-shadow:3px 2px 4px black;
+    font-family:inria serif regular;
+    letter-spacing: 2px;
+}
+
+.nav-link {
+    color:white; 
+    font-weight:bold;
+    font-size:16px;
+    text-shadow:3px 2px 4px black;
+    font-family:inria serif regular;
+    letter-spacing: 2px;
+}
+
+.nav-link:hover {
+    background-color:#C27D4B;
+    color:white;
+  }
+
+a.navbar-brand {
+    font-weight:bold;
+    font-style:italic;
+    border:black;
+    text-shadow: 1px 1px 1px black;
+}
+#first_item {
+    color: #D36E70;
+    font-size:2.5rem;
+}
+
+.last_item {
+    color:#C0C0C0;
+    font-size: 2rem;
+}
+
+.dropdown-item:hover {
+    background-color: #C27D4B;
+    color:white;
+}
+
+/* =============================================== FOOTER ================================================== */
+.footer-custom {
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background-color: #DFEAFF;
+}
+
+footer {
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 100%;
+    background-color: #101010;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.5);
+    padding: 5px;
+}
+
+.footer_top {
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    width: 100%;
+    padding: 15px;
+}
+
+footer ul {
+    width: 16.66%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
+
+a {
+    color:#606060;
+    transition: all linear 0.2s;
+    transform-origin: 50% 50%;
+    transform: scale(1);
+}
+
+a:hover {
+    color:blue;
+    transform: scale(1.1);
+}
+
+h6.text-uppercase.fw-bold.mb-4 {
+    color: #d36e70;
+}
+
+footer ul:nth-child(2) {
+    border-left: 1px solid rgba(255, 255, 255, 0.1);
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+footer ul p {
+    margin: 10px 0;
+}
+
+/* ================================================  ACCUEIL ================================================= */
+
+.carousel-caption {
+    bottom: 1rem;
+    z-index: 10;
+}
+
+.carousel-item {
+    height: 40rem; 
+}
+
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Titres & para */
+h1.carousel_title1 {
+    color:#334115;
+    font-weight:bold;
+    font-family:inria serif regular;
+    font-style:italic;
+    font-size:35px;
+    text-shadow:2px 1px 3px #334115
+}
+
+h1.carousel_title {
+    color:white;
+    font-weight:bold;
+    font-size:35px;
+    text-shadow:3px 2px 4px black;
+    font-family:inria serif regular;
+}
+
+p.carousel_para {
+    color:white;
+    font-weight:bold;
+    font-size:25px;
+    text-shadow:3px 2px 4px black;
+    font-family:inria serif regular;
+}
+
+.button_para .btn.btn-secondary {
+    background: #d36e70;
+}
+
+p.circle_para {
+    text-align:justify;
+}
+
+/* ============================================= A PROPOS ================================================= */
+img.featurettes {
+    border-radius:8px;
+}
+
+h2.featurette-heading {
+    color: white;
+}
+
+h2.featurette-heading span {
+    padding-bottom: 10px;
+    border-color:#d36e70;
+    border-bottom-style: solid;
+    border-bottom-width: 3.1px;
+    width: fit-content;
+}
+
+p.lead {
+    text-align:justify;
+}
+
+h2.featurette-heading span.text-muted {
+    color:white;
+}
+
+h2.titre_valeurs {
+    color: white;
+    font-style:italic;
+    margin-left:30px;
+    font-weight:bold;
+    font-size:40px;
+}
+
+section.about_valeurs {
+    padding:0;
+    margin:0;
+    font-family:'Poppins', sans-serif;
+}
+
+.container1 {
+    position: relative;
+    width: 1100px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:20px;
+}
+
+.container1 .card_valeurs {
+    position:relative;
+    max-width:300px;
+    height:210px;
+    background:#EFE9D0;
+    text-shadow:1px black;
+    margin:20px 10px;
+    margin-left:40px;
+    padding:20px 15px;
+    display:flex;
+    flex-direction:column;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+    transition: 0.3s ease-out;
+    justify-content: space-between;
+}
+
+.container1 .card_valeurs:hover {
+    height:470px;
+}
+
+.container1 .card_valeurs .imgBX {
+    position:relative;
+    width:260px;
+    height:240px;
+    top: -50px;
+    left:20px;
+    z-index: 1;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+}
+
+.container1 .card_valeurs .imgBX img {
+    max-width: 100%;
+    border-radius:4px;
+    max-height: 172.45px;
+}
+
+.container1 .card_valeurs .content {
+    position:relative;
+    margin-top: -200px;
+    padding: 10px 15px;
+    text-align: center;
+    color:#B36C61;
+    font-weight:bold;
+    visibility: hidden;
+    opacity:0;
+    transition: 0.3s ease-in-out;
+}
+
+.container1 .card_valeurs:hover .content {
+    visibility: visible;
+    opacity:1;
+    margin-top: -40px;
+    transition-delay: 0.3s;
+}
+
+.content h5 {
+    font-weight: bold;
+    text-shadow:1px 1px 3px black;
+}
+
+.info_valeurs {
+	position: relative;
+	z-index: 3;
+	color: white;
+	opacity: 0;
+	transform: translateY(30px);
+	transition: 0.5s;
+}
+
+/* =================================================== BOUTIQUE ========================================== */
+#shop_HSkin {
+    width:100%;
+    margin-bottom: 20px;
+}
+
+.Visage_HSkin, .Corps_HSkin {
+    width:80%;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+img.Visage_HSkin, img.Corps_HSkin {
+    display:inline;
+    justify-content:center;
+    text-align:center;  
+}
+
+img.Corps_HSkin {
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.img_skin_visage, .img_skin_corps {
+    border-radius: 10px;
+    width: 750px;
+    height:400px;
+    border: 2px solid white;
+    margin-top:20px;
+}
+
+h4.visage_path, h4.corps_path {
+    text-shadow:1px 1px 4px black;
+    color:white;
+}
+
+/* ============================================ PRODUITS (Visage & Corps) ================================= */
+/* Container-row */
+#container_products {
+    justify-content: center;
+    position:relative;
+    display: flex;
+    padding:0;
+}
+
+/* Cards_boutique */
+.card {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display:flex; 
+    justify-content:space-around;
+    box-align:center;
+    text-align:center;
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom:20px;
+    margin-top:90px;
+    width:18rem;
+   }
+
+.car-title > h5 {
+    text-align: center;
+}
+
+#visage > h3 {
+    color:gray;
+    text-align: center;
+    margin:auto;
+}
+
+.card-price {
+    color:blue;
+    font-weight:bold;
+    text-align: center;
+   }
+
+.price {
+    color:blue;
+    font-weight:bold;
+    text-align: center;
+   }
+
+.card-text {
+    text-align:center;
+}
+
+/* Buttons */
+#button_strap a.btn.btn-primary {
+    font-size:12px;
+    margin-left:5px;
+}
+
+#button_strap a.btn.btn-secondary {
+    font-size:12px;
+    margin-right: 5px;
+}
+
+/*============================================= Conseils Beauté ==================================================== */
+/* Intro */
+#advice_card {
+    display:flex;
+    justify-content:space-around;
+    margin-left:15px;
+}
+
+.intro2 {
+    width:100%;
+    margin: auto;
+    margin-top:50px;
+    font-family:Lucida Sans,Verdana;
+    color:#606060;
+    font-size:18px;
+    font-style:italic;
+    display:flex;
+    justify-content: center;
+    border: 2px solid #606060;
+    border-radius:8px;
+    font-size:20px;
+    margin-left:50px;
+    padding:10px;
+}
+
+h2.titre_conseils {
+    color:white;
+    justify-content: center;
+    font-weight:bold;
+    font-style:italic;
+    font-size:40px;
+    margin-left:50px;
+    margin-top:20px;
+}
+
+/* Titres */
+h3.article_1, h3.article_2 {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style:italic;
+    text-align: center;
+    color:white;
+    font-size:25px medium;
+    font-weight:bold;
+}
+
+/* Flip-Cards */
+*main {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.flip-card-container {
+    width :300px;
+    height:400px;
+    perspective: 1000px;
+    display:flex;
+    justify-content:center;
+    margin-left:15px;
+    margin-right:15px;
+}
+
+.flip-card {
+    width:20rem;
+    height:100%;
+    position:relative;
+    transition:transform 1s;
+    transform-style:preserve-3d;
+    display:flex;
+}
+
+.flip-card-container:hover .flip-card {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-front2, .flip-card-front3, .flip-card-front4 > h4 {
+    text-shadow:1px 1px 4px black;
+}
+
+.flip-card-front, .flip-card-front2, .flip-card-front3, .flip-card-front4, .flip-card-back {
+    position:absolute;
+    width:100%;
+    height:100%;
+    backface-visibility: hidden;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    font-size:2rem;
+    border-radius:0.5rem;
+}
+
+.flip-card-front,.flip-card-front2,.flip-card-front3,.flip-card-front4 {
+    color:white ;
+    border:2px solid whitesmoke;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position:center;
+    border-top-left-radius:40px;
+    border-bottom-right-radius:40px;
+    text-align:center;
+}
+
+.flip-card-front {
+    background-image:URL('/img/img_advice/visage_normal.jpg');
+}
+
+.flip-card-front2 {
+    background-image:URL('/img/img_advice/peau-seche.jpg');
+    background-position: right center;
+}
+
+.flip-card-front3 {
+    background-image:URL('/img/img_advice/peau grasse.jpeg');
+}
+
+.flip-card-front4 {
+    background-image:URL('/img/img_advice/seche1.jpg');
+}
+
+.flip-card-back {
+    color: white;
+    background-color: #FAACA8;
+    background-image: linear-gradient(19deg, #FAACA8 0%, #DDD6F3 100%);
+    transform: rotateY(180deg);
+}
+
+.flip-card-back p {
+    text-align: center;
+    margin:1rem;
+    font-size:1rem;
+    line-height:1.5rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.flip-card-back p span {
+    display:block;
+    font-size:1.2rem;
+    font-style:italic;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top:1,25rem;
+    text-shadow:1px 1px 5px black;  
+}
+
+.flip-card-front img {
+    width:100%;
+    height:100%;
+    border-radius:0.5rem;
+}
+
+/* Solutions_problématiques */
+.solutions_peau {
+    color:#606060;
+    font-family: Lucida Sans,Verdana;
+    margin-left:20px;
+    border-color:black;
+    font-style:italic;
+    justify-content: center;
+    border-radius:8px;
+    font-size:20px;
+    padding:10px;
+}
+
+b.facteurs {
+    color:#d36e70;
+}
+
+strong.facteurs {
+    color:#d36e70;
+    text-decoration:underline;
+}
+
+/* ============================================ PANIER =================================================== */
+.table thead th {
+    padding:0.60rem;
+    color:#d36e70;
+}
+
+.table tr th td {
+    padding:0.60rem;
+}
+
+img.cart-icon {
+    height: 30px;
+    font-size: 40px;
+    color:white;
+    font-weight: bolder;
+    margin-left:5px;
+    margin-right:5px;
+}
+
+a.link_products:hover {
+    color:blue;
+    text-decoration:underline;
+}
+
+a.link_products {
+    font-size:20px;
+    color:#d36e70;
+}
+
+.link_cart {
+    font-size:20px;
+}
+
+/* ============================================== LES FORMULAIRES ============================================ */
+
+/* ========== NOUS CONTACTER ========= */
+#first_contact {
+    background-image: URL('/img/img_bg/bg_lotus_marron.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+}
+
+#page-contact {
+    border-radius: 15px;
+}
+
+h2.title_contact {
+    text-align:center;
+    color:white;
+    padding-bottom:8px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; ;
+}
+
+h3.title_contact {
+    text-shadow: 1px 1px 1px black;
+    text-align:center;
+    color:white;
+    padding-bottom:8px;
+    font-weight:bold;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; ;
+}
+
+p.contact_us {
+    color:white;
+    text-shadow: 1px 1px 1px black;
+}
+
+p.flash_message {
+    font-style : italic;
+    color: #c87950;
+    text-shadow: 1px 1px 2px black;
+}
+
+#contact_submit.btn-primary.btn {
+    margin: auto;
+    display:flex;
+    justify-content:center;
+    background-color: #C27D4B;
+    border-color:white;
+    color:white;
+    font-weight: bold;
+}
+
+#contact_submit.btn-primary.btn:hover {
+    background-color:#e6d1a3;
+}
+
+#contact_content.form-control, #contact_nom.form-control, #contact_prenom.form-control, #contact_email.form-control  {
+    font-size:12px;
+    font-style:italic;
+}
+
+/* =========== CONNEXION =============*/
+.block-small {
+    max-width:600px;
+    margin: 0 auto;
+}
+
+#first_log {
+    background-image: URL('/img/img_bg/fleur_lotus_rose.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+.bg-image {
+    position:relative;
+    overflow:hidden;
+}
+
+.mask-custom {
+    backdrop-filter: blur(5px);
+    background-color: rgba(226, 222, 234, 0.62);
+}
+
+#page-form {
+    border-radius: 15px;
+}
+
+.p-5 {
+    padding:2rem;
+}
+
+/* ======== INSCRIPTION ========= */
+#register {
+    max-width:600px;
+    margin: 0 auto;
+}
+
+.col-md-10 {
+    margin:auto;
+}
+
+.form-label.required {
+    font-style:italic;
+}
+
+h2.title_register {
+    text-align:center;
+    color:white;
+    padding-bottom:8px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; ;
+}
+
+#page_register {
+    border-radius: 10px;
+} 
+
+#register_submit.btn-primary.btn {
+    margin: auto;
+    display:flex;
+    justify-content:center;
+}
+
+.first_reg {
+    background-image: URL('/img/img_bg/fleur_lotus.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+/* ======= MODIFICATION MOT DE PASSE ======== */
+
+.first_mdp {
+    background-image: URL('/img/img_bg/bg_fleur_blanche.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#page_mdp {
+    border-radius: 10px;
+} 
+
+h2.title_mdp {
+    text-align:center;
+    color:white;
+    padding-bottom:8px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; ;
+}
+
+#change_password_submit.btn-primary.btn {
+    margin: auto;
+    display:flex;
+    justify-content:center;
+    background-color: #e6d1a3;
+    border-color:white;
+    color:white;
+    font-weight: bold;
+}
+
+#change_password_submit.btn-primary.btn:hover {
+    background-color:#77B5FE;
+}
+
+/* ============= AJOUTER UNE ADRESSE =========== */
+
+.first_address {
+    background-image: URL('/img/img_bg/eau_rose.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#page_address {
+    border-radius: 10px;
+} 
+
+h2.title_address {
+    text-align:center;
+    font-weight:bold;
+    text-shadow: 1px 1px 1px black;
+    color:white;
+    padding-bottom:8px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; ;
+}
+
+#address_compagny.form-control {
+    font-size:12px;
+    font-style:italic;
+}
+
+.form-label {
+    font-style:italic;
+}
+
+#address_submit.btn.btn-info.btn {
+    margin: auto;
+    display:flex;
+    justify-content:center;
+    background-color: #3D9125;
+    border-color:white;
+    color:white;
+    font-weight: bold;
+}
+
+#address_submit.btn.btn-info.btn:hover {
+    background-color:#77B5FE;
+}
+/* ==================================================  / RECAP  =========================================== */
+.form-check {
+    background-color: #E4E6E5;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+    padding:20px;
+    margin-top: 7px;
+}
+
+.col-form-label {
+    font-weight: bold;
+}
+
+.order-summary {
+    background-color: #E4E6E5;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+    padding:20px;
+    margin-top:22px;
+}
+
+.account-item {
+    /* background-color: #dfe4ea; */
+    background: rgb(192,223,239);
+    background: linear-gradient(90deg, rgba(192,223,239,1) 3%, rgba(192,223,239,1) 8%, rgba(223,228,234,1) 46%);
+    padding: 70px;
+    text-shadow:1px 1px 1px gray;
+    border-radius: 10px;
+}
+
+.account-item a {
+    text-transform: uppercase;
+    font-size:13px;
+    font-weight: bold;
+}
+
+/*=======================================================  GENERALES ================================================= */
+
+/* MENTIONS LEGALES */
+#mentions > h2 {
+    margin-bottom:30px;
+    color:black;
+}
+
+#mentions > p > span {
+    color:blue;
+    text-decoration: underline;
+}
+
+/* CGU_CGV */
+#title_cgucgv h2, h3, h5, p {
+    margin-top: 15px;  
+}
+
+#title_cgucgv > h5 {
+    color:blue;
+}
+
+/* RGPD */
+#title_rgpd > h5 {
+    color:blue;
+}
+
+
+/* =================================================== AIDE =============================================== */
+/* FAQ */
+h5.title_faq {
+    color:#D36E70;
+}
+
+/* Plan du site */
+p a.plan {
+    color:blue; 
+    text-decoration:underline;
+}
+
+h6 a.help_links {
+    color:#D36E70;
+}
+/* Service client */
+    .container.marketing.mt-5 {
+        margin-bottom:150px;
+    }
+
+/* ============================================== Mon compte personnel ====================================== */
+.bienvenue_user {
+    display:flex;
+    justify-content: center;
+}
+
+.user_acces a {
+    color:blue;
+}
+

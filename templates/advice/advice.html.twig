@@ -1,0 +1,101 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Conseils Beauté{% endblock %}
+    
+{% block content %}
+
+    {# Intro #}
+    <br/>
+    <h2 class="titre_conseils">Nos Conseils</h2>
+    <hr>
+    <div class="intro2"><br>
+        <ul>Afin d'apporter les soins appropriés à votre peau, vous devez, tout d'abord, déterminer :<br><br>
+            <li> Quel est le type de votre peau si vous la connaissez et,</li>
+            <li> Quelle est la problématique de votre peau actuellement ?</li><br>
+        Vous trouverez ci-dessous <strong class="facteurs">des explications et des élèments de réponses</strong> à ces deux interrogations 
+        afin de vous aider dans vos choix : </ul>
+    </div><br>
+    <hr>
+    {# Differents types de peau #}
+    <h3 class="article_1">"Quel est votre type de peau ?"</h3><br>
+    <section id="advice_card">
+       
+    {# Card1: Peau Normal #}
+    <div class="flip-card-container"> 
+        <div class="flip-card">
+            <div class="flip-card-front">
+                <h4>Normale</h4>
+            </div>
+            <div class="flip-card-back">
+                <p><span>"Qu'est-ce qu'une peau normale?"</span><br>
+                    Douce, lisse, ni grasse ni sèche. Elle ne brille pas, vos pores sont lisses, votre teint est uniforme et vous ne ressentez pas d'inconfort ou de tiraillement, alors votre peau est d'un type dit "normal".</p>
+            </div>
+        </div>
+    </div>
+    {# Card2: Peau Sèche #}
+    <div class="flip-card-container"> 
+            <div class="flip-card">
+                <div class="flip-card-front2">
+                    <h4>Sèche</h4>
+                </div>
+                <div class="flip-card-back">
+                    <p><span>"Qu'est-ce qu'une peau sèche ?"</span><br>
+                    Si votre peau est fine, grain serré, sensible et source de tiraillements, vous avez certainement la peau sèche. Pauvre en lipides, le film hydrolipidique présent à la surface de la peau devient trop perméable. Mal protégée : la peau se déshydrate facilement.</p>
+            </div>
+        </div>
+    </div>
+    {# Card3: Peau Grasse #}
+        <div class="flip-card-container"> 
+            <div class="flip-card">
+                <div class="flip-card-front3">
+                    <h4>Grasse</h4>
+                </div>
+                <div class="flip-card-back">
+                    <p><span>"Qu'est-ce qu'une peau grasse ?"</span><br>
+                    Dû à un excès de sébum, une substance huileuse sécrétée par les glandes sébacées pour protéger l'épiderme des agressions extérieures. La peau prend alors un aspect luisant, on dit parfois qu'elle brille.</p>
+                </div>
+            </div>
+        </div>
+    {# Card4: Peau Mixte #}
+        <div class="flip-card-container"> 
+            <div class="flip-card">
+                <div class="flip-card-front4">
+                    <h4>Mixte</h4>
+                </div>
+                <div class="flip-card-back">
+                    <p><span>"Qu'est-ce qu'une peau mixte ?"</span><br>
+                    Si elle est sèche sur les joues et les tempes, mais plutôt grasse au niveau de la ligne médiane (front, nez, menton), vous avez vraisemblablement une peau mixte.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br>
+    <hr>
+{# --------Solutions_problématiques-------- #}
+
+    <h3 class="article_2">"Quelle est votre problématique ?"</h3>
+    <div class="solutions_peau">
+        <p>Selon votre type de peau ainsi que votre carnation, vous pouvez rencontrer diverses problématiques liées à divers facteurs :<br>
+            <ul>
+                <li>Facteurs <b class="facteurs">environnementaux</b> : pollution, variations climatiques, rayonnements UltraViolet</li>
+                <li>Facteurs <b class="facteurs">humains</b> : stress oxydatif, mauvaise alimentation, manque de sommeil, anxiété, nervosité, consommation de tabac et d'alcool </li>
+                <li>Facteurs <b class="facteurs">médicaux</b> : prise de médicaments divers, état de santé physique, dépression </li>
+            </ul>
+                Vous trouverez, ci-dessous, <strong class="facteurs">des réponses plus conscises</strong> en fonction de l'état de santé de votre peau et de ces facteurs afin d'adapter vos routines :<br><br>
+                <ul>
+                    <li><a href="{{ ('/img/img_advice/Article1_peau_seche_irritee.pdf') }}">Peaux sèches & irritées</a></li> 
+                    <li><a href="https://www.etatpur.fr/blog/comment-rehydrater-une-peau-deshydratee?gclid=CjwKCAjwwo-WBhAMEiwAV4dybVxsUfGAmIiJrDlqw3FagT1Ej9YJNftPXuLTOvbENtngdrZlK99RgBoC_IEQAvD_BwE" onclick="window.open(this.href); return false">Peaux deshydratées</a></li>
+                    <li><a href="https://www.biosme-paris.fr/blogs/infos/peau-fragile-et-sensible-comment-la-proteger" onclick="window.open(this.href); return false">Peaux fragiles & sensibles</a></li>
+                    <li><a href="https://www.typology.com/carnet/fiche-d-identite-peau-a-imperfections-"onclick="window.open(this.href); return false">Peaux à imperfections</a></li>
+                    <li><a href="https://www.oolution.com/blogs/soin-de-la-peau/comment-prendre-soin-peau-grasse"onclick="window.open(this.href); return false">Peaux grasses</a></li>
+                    <li><a href="https://www.docmorris.fr/conseils-de-pharmacien/article/acne-causes-et-traitements-de-lacne"onclick="window.open(this.href); return false">Peaux acnéiques</a></li>
+                    <li><a href="https://www.passeportsante.net/fr/Maux/Problemes/Fiche.aspx?doc=hyperpigmentation"onclick="window.open(this.href); return false">Peaux hyperpigmentées</a></li>
+                    <li><a href="https://www.passeportsante.net/fr/Maux/Symptomes/Fiche.aspx?doc=rougeur-visage-symptome"onclick="window.open(this.href); return false">Peaux avec rougeurs</a></li>
+                    <li><a href="https://www.laprovencale.bio/Nos-secrets-de-beaute/Visage/Comment-prendre-soin-de-ma-peau-mature"onclick="window.open(this.href); return false">Peaux mâtures</a></li>
+                    <li><a href="https://jungmagazine.com/points-noirs-pores-dilates-comment-lutter/"onclick="window.open(this.href); return false">Peaux à pores dilatés/points noires</a></li>
+                    <li><a href="https://www.esthederm.fr/blog/post/visage-fatigue-teint-terne-imperfections-quelles-solutions.html"onclick="window.open(this.href); return false">Peaux fatiguées</a></li>
+                    <li><a href="https://www.etatpur.fr/blog/dynamiser-votre-peau-pour-un-teint-eclatant?gclid=CjwKCAjwwo-WBhAMEiwAV4dybSDQ2-csSAY6FTunuBWPLQSFBu70v3xdqiK_PDBZHUZDTEELgC3UIhoC-BIQAvD_BwE"onclick="window.open(this.href); return false">Teint terne</a></li>
+                </ul>
+        </p>
+    </div>
+{% endblock %}

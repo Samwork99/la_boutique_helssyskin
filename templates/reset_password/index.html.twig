@@ -1,0 +1,39 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Mot de passe oublié{% endblock %}
+
+{% block content %}
+<body id="first_log">
+    <div class="bg-image bg-login shadow-2-strong">
+        <div class="d-flex align-items-center">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-8 col-xl-5 my-3">
+                        <div class="block-small">
+                        {# {% for message in app.flashes('notice') %}
+                            <div class="alert-info">{{ message }}</div>
+                        {% endfor %} #}
+                            <form name="login_form" method="post" id="page-form" class="mask-custom rounded-5 shadow-5-strong p-5 mb-5" >
+                                    <h1 class="h3 mb-3 font-weight-normal text-center">Réinitialisation de votre mot de passe</h1><br>
+                                    {% for message in app.flashes('notice') %}
+                                        <div class="alert-info">{{ message }}</div>
+                                    {% endfor %}
+                                    <br>
+                                    <label for="inputEmail">Votre email</label>
+                                    <input type="email" name="email" id="inputEmail" class="form-control" placeholder="Saississez votre adresse email" autocomplete="email" required autofocus>
+                                    <br>
+                                    <button class="btn btn-lg btn-info btn-block mt-3" type="submit">
+                                        Réinitialiser
+                                    </button>
+                                    <hr>
+                                    <p class="text-center">Ou souhaitez-vous <a href="{{ path('app_login') }}">vous connecter ?</a></p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </body>
+
+{% endblock %}

@@ -1,0 +1,78 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}A propos{% endblock %}
+
+{% block content %}
+
+<!-- FEATURETTES -->
+  <div class="row featurette">
+    <div class="col-md-7">
+        <h2 class="featurette-heading">A propos d'<span>HelssySkin</span><span class="text-muted"></span></h2><br>
+        <p class="lead">Depuis 2022, nous nous positionnons sur le marché des cosmétiques bio des produits de soins de la peau. Marché en forte croissance ces dernières années où "l'hygiène-skin" prend de plus en plus d'ampleurs.<br>Maquillage, mauvais nettoyage, produits pour la peau agressifs, la pollution de l'air, mauvais gestes, mauvaises routines, produits non adaptés à son type de peau…</p>
+    </div>
+    <div class="col-md-5 mt-4">
+        <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="340" height="340" src="{{ asset('img/img_featurettes/creme_peau.jpg') }}" style="border-radius:2px;border-top-left-radius:40px;border-bottom-right-radius:40px" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 500x500"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em"></text>
+    </div>
+</div>
+
+<hr class="featurette-divider">
+
+<div class="row featurette">
+    <div class="col-md-7 order-md-2">
+        <h2 class="featurette-heading">Certifiés <span>100% Bio</span><span class="text-muted"></span></h2><br>
+        <p class="lead">Pour pouvoir suivre les tendances, notre peau est menée à rude épreuve et les désastres sur la peau sont fréquents. Le problème, c’est que la peau ne cicatrise pas sans produits adaptés à ses besoins...</p>
+    </div>
+    <div class="col-md-5 order-md-1">
+        <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" src="{{ asset('img/img_featurettes/soin_peau.jpg') }}" style="border-radius:2px;border-top-left-radius:40px;border-bottom-right-radius:40px" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 500x500"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em"></text>
+    </div>
+</div>
+
+<hr class="featurette-divider">
+<div class="row featurette">
+    <div class="col-md-7">
+        <h2 class="featurette-heading">Conseils beauté <span>adaptés</span><span class="text-muted"></span></h2><br>
+        <p class="lead">Pour éviter le point de non retour de peaux sèches, déshydratées ou à problèmes, il est nécessaire d'apprendre à traiter sa peau différemment. Il faut la chouchouter avec des produits sains et il faut trouver une manière de l'embellir sans l'abîmer.<br><br><strong>L’objectif d'HelssySkin, c’est exactement ça !</strong></p>
+    </div>
+    <div class="col-md-5">
+        <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" src="{{ asset('img/img_featurettes/smile.jpg') }}" style="border-radius:2px;border-top-left-radius:40px;border-bottom-right-radius:40px" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 500x500"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em"></text>
+    </div>
+</div>
+<hr class="featurette-divider">
+
+<!-- VALEURS -->
+<section class="about_valeurs">
+    <h2 class="titre_valeurs">Nos valeurs</h2><br><br>
+    <div class="container1">
+      <div class="card_valeurs">
+        <div class="imgBX">
+          <img src ="{{ ('/img/img_valeurs/engagement.jpg') }}">
+        </div>
+        <div class="content">
+          <h5>ENGAGEMENT</h5>
+            <p>Nous nous engageons à vous proposer des produits de qualité bio et sains adaptés à chaque type de peau. Notre objectif est de vous apporter les meilleurs soins en adéquation à vos besoins.</p>
+        </div>
+      </div>
+    
+      <div class="card_valeurs">
+        <div class="imgBX">
+          <img src ="{{ ('/img/img_valeurs/qualite.jpg') }}">
+        </div>
+        <div class="content">
+          <h5>EXIGENCE DE QUALITE</h5>
+            <p>La qualité est au centre de nos priorités. C'est le fil conducteur de nos engagements envers vous afin de vous apporter des produits naturels et sains certifiés "bio".</p>
+        </div>
+      </div>
+  
+      <div class="card_valeurs">
+        <div class="imgBX">
+          <img src ="{{ ('/img/img_valeurs/transparence.jpg') }}">
+        </div>
+        <div class="content">
+          <h5>TRANSPARENCE</h5>
+            <p>La traçabilité est au centre de notre gestion au quotidien. Nous nous attelons à rester proactifs tout en proposant des produits naturels en toute transparence. En effet, la transparence fait partie de notre éthique tant sur le plan professionnel qu'humain.</p>
+        </div>
+      </div>
+    </div>  
+</section>
+
+{% endblock %}

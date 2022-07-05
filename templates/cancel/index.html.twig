@@ -1,0 +1,26 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Echec du paiement{% endblock %}
+
+{% block content %}
+
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <br>
+            <h1 class="text-center">Echec de paiement de votre commande</h1><br>
+            <p>Bonjour <strong>{{ order.user.firstname }} {{ order.user.lastname }}</strong>,<br><br>
+                Le paiement a été refusé pour votre commande n°<strong>{{ order.reference }}</strong>.
+            <br>
+                Une confirmation d'erreur vient de vous être envoyée par email à l'adresse suivante : <strong>{{ order.user.email }}</strong>.<br><br>
+            Réessayer le paiement en retournant <a href="{{ path('order') }}" style="color:blue">sur votre commande</a></p>
+            <hr>
+                <p class="text-center-left"><a href="{{ path('cart') }}" style="color:blue">Retourner au panier</a>
+                | <a href="{{ path('home') }}" style="color:blue">Retourner à l'accueil</a>
+            </p><br>
+            
+        </div>
+    </div>
+</div>
+
+{% endblock %}

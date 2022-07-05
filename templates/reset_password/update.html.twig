@@ -1,0 +1,33 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Mise à jour du mot de passe{% endblock %}
+
+{% block content %}
+<body id="first_log">
+    <div class="bg-image bg-login shadow-2-strong">
+        <div class="d-flex align-items-center">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-8 col-xl-5 my-3">
+
+                        <div class="block-small">
+                            <form name="login_form" method="post" id="page-form" class="mask-custom rounded-5 shadow-5-strong p-5 mb-5" >
+                                <h1 class="h3 mb-3 font-weight-normal text-center">Réinitialiser mon mot de passe</h1><br>
+                                    {% for message in app.flashes('notice') %}
+                                        <div class="alert-info">{{ message }}</div>
+                                    {% endfor %}
+                                    
+                                    {% for message in app.flashes('notice') %}
+                                        <div class="alert-info">{{ message }}</div>
+                                    {% endfor %}
+                                    <br>
+                                    {{ form(form) }}
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </body>
+{% endblock %}

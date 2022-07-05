@@ -1,0 +1,1256 @@
+/* ======= Responsive Header ============ */
+/* @media screen and (min-width: 1280px) {
+}
+
+@media screen and (min-width: 980px) and (max-width: 1279px) {
+    .nav-link {
+        font-size:16px;
+    }
+}
+
+@media screen and (min-width: 520px) and (max-width: 979px) {
+    .nav-link {
+        font-size:9px;
+    }
+    
+    #first_item {
+        font-size:1.3rem;
+        }
+        
+    .last_item {
+        font-size: 0.8rem;
+        }
+    img.cart-icon {
+        font-size: 15px;
+    }  */
+    /* .navbar-item-custom {
+        font-size:10px;
+        display:flex;
+    } */
+/* }
+
+@media screen and (min-width: 260px) and (max-width: 519px) {
+    .navbar-toggler.collapsed { */
+        /* background-image: URL('../img/menu.png'); */
+        /* width: 35px;
+        position: absolute;
+        right: 40px;
+        display:block;
+    }
+    .menu-hamburger {
+        color:white;
+        display: block;
+        border:none;
+    }
+
+    #first_item {
+        font-size:1.1rem;
+    }
+    
+    .last_item {
+        font-size: 0.8rem;
+    }
+    .nav-link {
+        font-size:13px;
+    }
+    img.cart-icon {
+        font-size: 10px;
+        height: 10px;
+    }
+}
+    
+@media screen and (max-width: 259px) {
+    .navbar-toggler.collapsed {
+        width: 35px;
+        position: absolute;
+        right: 30px;
+        display:block;
+    }
+    .menu-hamburger {
+        color:white;
+        display: block;
+        border:none;
+    }
+
+    #first_item {
+        font-size:1rem;
+    }
+    
+    .last_item {
+        font-size: 0.6rem;
+    }
+
+    .nav-link {
+        font-size:10px;
+    }
+    img.cart-icon {
+        font-size: 8px;
+        height: 8px;
+    }
+} */
+
+/* ======= Responsive Footer ============ */
+/* @media screen and (min-width: 1280px) {
+    footer ul {
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        padding-inline-start: 0px;
+        margin-left:6px;
+        margin-right:6px;
+        padding:0px;
+    }
+}
+
+@media screen and (min-width: 980px) and (max-width: 1279px) {
+    footer ul {
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        padding-inline-start: 0px;
+        margin-left:6px;
+        margin-right:6px;
+        padding:0px;
+    }
+} */
+/* ========================================================================================= */
+/* @media screen and (min-width: 539px) and (max-width: 979px) {
+    .footer_top {
+        display:block;
+        width:100%;
+        height:100%;
+        font-size:13px;
+        margin:0px;
+        padding:0px;
+    }
+
+    footer ul {
+        width:100%;
+        padding:8px;
+        margin:4px;
+    }
+
+    footer ul p {
+        margin: 0px;
+    }
+
+    h6.text-uppercase.fw-bold.mb-4 {
+        font-size:15px;
+        margin: 5px;
+    }
+}
+
+@media screen and (min-width: 260px) and (max-width: 540px) {
+    .footer_top {
+        display:block;
+        width:100%;
+        height:100%;
+        font-size:13px;
+        margin:0px;
+        padding:0px;
+    }
+
+    footer ul {
+        width:100%;
+        padding:8px;
+        margin:4px;
+    }
+
+    footer ul p {
+        margin: 0px;
+    }
+
+    h6.text-uppercase.fw-bold.mb-4 {
+        font-size:16px;
+        margin: 5px;
+    }
+} */
+/* ====================================================================================================== */
+/* @media screen and (max-width: 259px) {
+    .footer_top {
+        display:block;
+        width:100%;
+        height:100%;
+        font-size:13px;
+        margin:0px;
+        padding:0px;
+    }
+
+    footer ul {
+        width:100%;
+        padding:8px;
+        margin:4px;
+    }
+
+    footer ul p {
+        margin: 0px;
+    }
+    
+    h6.text-uppercase.fw-bold.mb-4 {
+        font-size:16px;
+        margin: 5px;
+    }
+} */
+
+/* Responsive accueil */
+/* @media screen and (min-width: 1280px) {
+}
+
+@media screen and (min-width: 980px) and (max-width: 1279px) {
+
+}
+
+@media screen and (min-width: 520px) and (max-width: 979px) {
+h1.carousel_title1, h1.carousel_title {
+    font-size:20px;
+}
+
+p.carousel_para {
+    font-size:13px;
+}
+
+.btn.btn-lg.btn-primary {
+    font-size:15px;
+} */
+
+/* .carousel-item > img { */
+    /* position: absolute;
+    top: -85px;
+    left: 20px;
+    min-width: 100%;
+    height: auto;
+} */
+
+/* .bd-placeholder-img {
+    margin-top: 20px;
+}
+.carousel-caption.text-right {
+    position:absolute;
+    left:-10px;
+    bottom:-150px;
+} 
+.carousel-caption.text-left {
+    position:absolute;
+    right:5px;
+    top:150px;
+} 
+.carousel-caption {
+    position:absolute;
+    top:120px;
+    left:20px;
+} 
+.carousel-indicators {
+    position:absolute;
+    top: 500px;
+    margin: 0;
+}    
+.container.marketing {
+    margin:auto;
+    justify-content: center;
+}
+
+}
+
+@media screen and (min-width: 260px) and (max-width: 519px) {
+h1.carousel_title1 {
+    font-size:18px;
+    margin:2px;
+}
+
+h1.carousel_title {
+    font-size:18px;
+    margin:2px;
+}
+p.carousel_para {
+    font-size:10px;
+    margin:2px;
+}
+
+.btn.btn-lg.btn-primary {
+    font-size:13px;
+    margin:5px;
+}
+
+.bd-placeholder-img {
+    margin-top: 20px;
+}
+.carousel-caption.text-right {
+    position:absolute;
+    left:-10px;
+    bottom:-150px;
+    padding:0;
+    margin:0;
+} 
+.carousel-caption.text-left {
+    position:absolute;
+    right:5px;
+    top:150px;
+    padding:0;
+    margin:0;
+} 
+.carousel-caption {
+    position:absolute;
+    top:120px;
+    left:20px;
+    padding:0;
+    margin:0;
+} 
+.carousel-indicators {
+    position:absolute;
+    top: 500px;
+    margin: 0;
+}    
+}
+
+@media screen and (max-width: 259px) {
+h1.carousel_title1 {
+    font-size:18px;
+}
+
+h1.carousel_title {
+    font-size:18px;
+}
+p.carousel_para {
+    font-size:10px;
+}
+
+.btn.btn-lg.btn-primary {
+    font-size:13px;
+}
+
+.bd-placeholder-img {
+    margin-top: 20px;
+}
+.carousel-caption.text-right {
+    position:absolute;
+    left:-10px;
+    bottom:-150px;
+} 
+.carousel-caption.text-left {
+    position:absolute;
+    right:5px;
+    top:150px;
+} 
+.carousel-caption {
+    position:absolute;
+    top:120px;
+    left:20px;
+} 
+.carousel-indicators {
+    position:absolute;
+    top: 290px;
+    margin: 0;
+}    
+} */
+
+/* ========== RESPONSIVE A PROPOS ============== */
+/* @media screen and (min-width: 1280px) {
+    
+}
+
+@media screen and (min-width: 980px) and (max-width: 1279px) {
+    .container1 { */
+        /* display : block; */
+        /* padding:0;
+        margin:0;
+        width:1000px;
+        margin-bottom:20px;
+    }
+    .container1 .card_valeurs {
+        align-items: center;
+        justify-content: center;
+    }
+    .container.marketing.mt-5 {
+        margin:0;
+    } 
+    h2.titre_valeurs {
+        margin-bottom:20px;
+    }
+}
+
+@media screen and (min-width: 520px) and (max-width: 979px) {
+    .container1 {
+        display : block;
+        padding:0;
+        margin:0;
+        width:500px;
+    }
+    .container1 .card_valeurs {
+        align-items: center;
+        justify-content: center;
+    }
+    .container.marketing.mt-5 {
+        margin:auto;
+    }
+}
+
+@media screen and (min-width: 260px) and (max-width: 519px) {
+    .container1 {
+        display : block;
+        padding:0;
+        margin:0;
+        width:240px;
+    }
+    .container1 .card_valeurs {
+        align-items: center;
+        justify-content: center;
+    }
+    .container.marketing.mt-5 {
+        margin:0;
+    }
+}
+    
+@media screen and (max-width: 259px) {
+    .container1 {
+        display : block;
+        padding:0;
+        margin:0;
+        width:250px;
+        
+    } */
+    /* .container1 .card_valeurs {
+        align-items: center;
+        justify-content: center;
+    }
+    .container.marketing.mt-5 {
+        margin:0;
+    }
+} */
+
+/* Responsive SHOP */
+
+/* @media screen and (min-width: 980px) and (max-width: 1279px) {
+    .img_skin_visage, .img_skin_corps {
+        margin-top:20px;
+        border: 2px solid white;
+    }
+}
+@media screen and (min-width: 520px) and (max-width: 979px) {
+    .container {
+        margin-left:0px;
+        padding-left:0px;
+    }
+    .img_skin_visage, .img_skin_corps {
+        margin-top:20px;
+        border: 2px solid white;
+        margin-left:0px;
+    }
+
+    .corps_path , .visage_path {
+        margin-bottom:150px;
+    }
+    .Visage_HSkin, .Corps_HSkin {
+        margin:0px;
+        width:50%;
+        margin-left:0px;
+    }
+}
+
+@media screen and (min-width: 260px) and (max-width: 519px) {
+    .container {
+        margin-left:0px;
+        padding-left:0px;
+    }
+    .img_skin_visage, .img_skin_corps {
+        margin-top:20px;
+        border: 2px solid white;
+        margin-left:0px;
+        width: 280px;
+        height:300px;
+    }
+
+    .corps_path , .visage_path {
+        margin-bottom:150px;
+    }
+    .Visage_HSkin, .Corps_HSkin {
+        margin:0px;
+        width:50%;
+        margin-left:0px;
+    }
+}
+@media screen and (max-width: 259px) {
+    .container {
+        margin-left:0px;
+        padding-left:0px;
+    }
+    .img_skin_visage, .img_skin_corps {
+        margin-top:20px;
+        border: 2px solid white;
+        margin-left:0px;
+        width: 258px;
+        height:300px;
+    }
+
+    .corps_path , .visage_path {
+        margin-bottom:150px;
+    }
+    .Visage_HSkin, .Corps_HSkin {
+        margin:0px;
+        width:50%;
+        margin-left:0px;
+    }
+} */
+
+/* ======= Responsive CONSEILS Beauté ============ */
+/* @media screen and (min-width: 1280px) {
+    .flip-card-front, .flip-card-front2, .flip-card-front3, .flip-card-front4 {
+        width: 280px;
+    }
+}
+
+@media screen and (min-width: 980px) and (max-width: 1279px) {
+    #advice_card {
+        display:block;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .flip-card-front, .flip-card-front2, .flip-card-front3, .flip-card-front4 {
+        width: 280px;
+    }
+    .intro2 {
+       margin-left:0px;
+    }
+    .flip-card-container {
+        margin-bottom:20px;
+        margin-left:auto;
+        margin-right:auto;
+    }
+}
+
+@media screen and (min-width: 520px) and (max-width: 979px) {
+    #advice_card {
+        display:block;
+        justify-content: center;
+        margin-left:70px;
+    }
+
+    .flip-card-front,.flip-card-front2,.flip-card-front3,.flip-card-front4 {    
+        justify-content:space-around;
+    }
+    .intro2 {
+        margin-left:0px;
+    }
+    .flip-card-container {
+        margin-bottom:20px;
+        margin-left:auto;
+        margin-right:auto;
+    }
+}
+
+@media screen and (min-width: 260px) and (max-width: 519px) {
+    #advice_card {
+        display:block;
+        justify-content: center;
+    }
+
+    .flip-card-front,.flip-card-front2,.flip-card-front3,.flip-card-front4 {    
+        margin-bottom:10px;
+        margin-top:10px;
+    }
+    .intro2 {
+        margin-left:0px;
+    }
+    .flip-card-container {
+        margin-bottom:20px;
+        margin-left:auto;
+        margin-right:auto;
+        width:270px;
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 259px) {
+    #advice_card {
+        display:block;
+        justify-content: center;
+        
+      }
+    .flip-card-front,.flip-card-front2,.flip-card-front3,.flip-card-front4 {    
+        margin-bottom:10px;
+        margin-top:10px;
+    }
+    .intro2 {
+        margin-left:0px;
+    }
+    .flip-card-container {
+        margin-bottom:20px;
+        margin-left:auto;
+        margin-right:auto;
+        width:249px;
+        height: 290px;
+    }
+} */
+
+/* Responsive Contact */
+
+/* @media screen and (min-width: 520px) and (max-width: 979px) {
+    .row.justify-content-center {
+        margin-bottom:250px;
+    }
+    } */
+
+/* Responsive Suivi commande */
+
+/* @media screen and (min-width: 260px) and (max-width: 519px) {
+    img.img_commande {
+        width:260px;
+    }
+} */
+
+/* Responsive CG */
+
+/* @media screen and (min-width: 260px) and (max-width: 519px) {
+    #title_cgucgv {
+        width:260px;
+        margin-left:0px;
+    }
+} */
+
+/* =======  Responsive Mon compte =========== */
+/* @media screen and (min-width: 1280px) {
+    
+}
+
+@media screen and (min-width: 980px) and (max-width: 1279px) {
+   
+}
+
+@media screen and (min-width: 520px) and (max-width: 979px) {
+    .bienvenue_user {
+        display:block;
+        justify-content: center;
+    }
+    .account-item {
+        margin-top:20px;
+    }
+}
+
+@media screen and (min-width: 260px) and (max-width: 519px) {
+    .bienvenue_user {
+        display:block;
+        justify-content: center;
+    }
+    .account-item {
+        margin-top:20px;
+    }
+}
+
+@media screen and (max-width: 259px) {
+    .bienvenue_user {
+        display:block;
+        justify-content: center;
+    }
+    .account-item {
+        margin-top:20px;
+    }
+} */
+
+/* ====================================== RESPONSIVE DESIGN ============================================ */
+
+/* =================== 1er palier ================= */
+@media screen and (min-width: 1280px) {
+    /* Footer */
+    footer ul {
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        padding-inline-start: 0px;
+        margin-left:6px;
+        margin-right:6px;
+        padding:0px;
+    }
+    /* Conseils Beauté */
+    .flip-card-front, .flip-card-front2, .flip-card-front3, .flip-card-front4 {
+        width: 280px;
+    }
+}
+
+/* ================== 2nd palier =================== */
+@media screen and (min-width: 980px) and (max-width: 1279px) {
+    /* Header */
+    .nav-link {
+        font-size:16px;
+    }
+
+    /* Footer */
+    footer ul {
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        padding-inline-start: 0px;
+        margin-left:6px;
+        margin-right:6px;
+        padding:0px;
+    }
+
+    /* A propos */
+    .container1 {
+        /* display : block; */
+        padding:0;
+        margin:0;
+        width:1000px;
+        margin-bottom:20px;
+    }
+    .container1 .card_valeurs {
+        align-items: center;
+        justify-content: center;
+    }
+    .container.marketing.mt-5 {
+        margin:0;
+    } 
+    h2.titre_valeurs {
+        margin-bottom:20px;
+    }
+
+    /* Boutique */
+    .img_skin_visage, .img_skin_corps {
+        margin-top:20px;
+        border: 2px solid white;
+    }
+
+    /* Conseils Beauté */
+    #advice_card {
+        display:block;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .flip-card-front, .flip-card-front2, .flip-card-front3, .flip-card-front4 {
+        width: 280px;
+    }
+    .intro2 {
+       margin-left:0px;
+    }
+    .flip-card-container {
+        margin-bottom:20px;
+        margin-left:auto;
+        margin-right:auto;
+    }
+}
+
+/* ========================== palier spécial footer ========== */
+@media screen and (min-width: 539px) and (max-width: 979px) {
+    /* Footer */
+    .footer_top {
+        display:block;
+        width:100%;
+        height:100%;
+        font-size:13px;
+        margin:0px;
+        padding:0px;
+    }
+    footer ul {
+        width:100%;
+        padding:8px;
+        margin:4px;
+    }
+    footer ul p {
+        margin: 0px;
+    }
+    h6.text-uppercase.fw-bold.mb-4 {
+        font-size:15px;
+        margin: 5px;
+    }
+}
+
+@media screen and (min-width: 260px) and (max-width: 540px) {
+    /* Footer */
+    .footer_top {
+        display:block;
+        width:100%;
+        height:100%;
+        font-size:13px;
+        margin:0px;
+        padding:0px;
+    }
+    footer ul {
+        width:100%;
+        padding:8px;
+        margin:4px;
+    }
+    footer ul p {
+        margin: 0px;
+    }
+    h6.text-uppercase.fw-bold.mb-4 {
+        font-size:16px;
+        margin: 5px;
+    }
+}
+/* ============================================================ */
+
+/* ========================== 3ème palier ==================== */
+@media screen and (min-width: 520px) and (max-width: 979px) {
+    /* Header */
+    .nav-link {
+        font-size:9px;
+    }   
+    #first_item {
+        font-size:1.3rem;
+        }    
+    .last_item {
+        font-size: 0.8rem;
+        }
+    img.cart-icon {
+        font-size: 15px;
+    } 
+    /* .navbar-item-custom {
+        font-size:10px;
+        display:flex;
+    } */
+
+    /* Accueil */
+    h1.carousel_title1, h1.carousel_title {
+        font-size:20px;
+    }
+    p.carousel_para {
+        font-size:13px;
+    }
+    .btn.btn-lg.btn-primary {
+        font-size:15px;
+    }
+    /* .carousel-item > img { */
+        /* position: absolute;
+        top: -85px;
+        left: 20px;
+        min-width: 100%;
+        height: auto;
+    } */
+    .bd-placeholder-img {
+        margin-top: 20px;
+        /* height:23rem; */
+    }
+    .carousel-item, .carousel-item.active {
+        height: 23rem; 
+    }
+    .carousel-caption.text-right {
+        position:absolute;
+        left:-10px;
+        bottom:-150px;
+        height: 250px;
+    } 
+    .carousel-caption.text-left {
+        position:absolute;
+        right:5px;
+        top:150px;
+        height: 250px;
+    } 
+    .carousel-caption {
+        position:absolute;
+        top:90px;
+        left:20px;
+        height: 250px;
+    } 
+    .carousel-indicators {
+        position:absolute;
+        top: 350px;
+        margin: 2px;
+        height:10px;
+    }    
+    .container.marketing {
+        margin:auto;
+        justify-content: center;
+    }
+    .carousel-control-next,.carousel-control-prev  {
+        height: 250px;
+    }
+    
+    /* A propos */
+    .container1 {
+        display : block;
+        padding:0;
+        margin:0;
+        width:500px;
+    }
+    .container1 .card_valeurs {
+        align-items: center;
+        justify-content: center;
+    }
+    .container.marketing.mt-5 {
+        margin:auto;
+    }
+
+    /* Boutique */
+    .container {
+        margin-left:0px;
+        padding-left:0px;
+    }
+    .img_skin_visage, .img_skin_corps {
+        margin-top:20px;
+        border: 2px solid white;
+        margin-left:0px;
+    }
+
+    .corps_path , .visage_path {
+        margin-bottom:150px;
+    }
+    .Visage_HSkin, .Corps_HSkin {
+        margin:0px;
+        width:50%;
+        margin-left:0px;
+    }
+
+    /* Conseils Beauté */
+    #advice_card {
+        display:block;
+        justify-content: center;
+        margin-left:70px;
+    }
+
+    .flip-card-front,.flip-card-front2,.flip-card-front3,.flip-card-front4 {    
+        justify-content:space-around;
+    }
+    .intro2 {
+        margin-left:0px;
+    }
+    .flip-card-container {
+        margin-bottom:20px;
+        margin-left:auto;
+        margin-right:auto;
+    }
+
+    /* Contact */
+    .row.justify-content-center {
+        margin-bottom:250px;
+    }
+
+    /* Mon compte */
+    .bienvenue_user {
+        display:block;
+        justify-content: center;
+    }
+    .account-item {
+        margin-top:20px;
+    }
+}
+/* ====================== 4ème palier ======================= */
+@media screen and (min-width: 260px) and (max-width: 519px) {
+    /* Header */
+    .navbar-toggler.collapsed {
+        /* background-image: URL('../img/menu.png'); */
+        width: 35px;
+        position: absolute;
+        right: 40px;
+        display:block;
+    }
+    .menu-hamburger {
+        color:white;
+        display: block;
+        border:none;
+    }
+    #first_item {
+        font-size:1.1rem;
+    }
+    .last_item {
+        font-size: 0.8rem;
+    }
+    .nav-link {
+        font-size:13px;
+    }
+    img.cart-icon {
+        font-size: 10px;
+        height: 10px;
+    }
+
+    /* Accueil */
+    h1.carousel_title1 {
+        font-size:18px;
+        margin:2px;
+    }
+    h1.carousel_title {
+        font-size:18px;
+        margin:2px;
+    }
+    p.carousel_para {
+        font-size:10px;
+        margin:2px;
+    }
+    .btn.btn-lg.btn-primary {
+        font-size:13px;
+        margin:5px;
+    }
+    .bd-placeholder-img {
+        margin-top: 24px;
+    }
+    .carousel-item, .carousel-item.active {
+        height: 22rem; 
+    }
+    .carousel-item.active {
+        height:300px;
+    }
+    .carousel-caption.text-right {
+        position:absolute;
+        left:-10px;
+        bottom:-150px;
+        height:150px;
+    } 
+    .carousel-caption.text-left {
+        position:absolute;
+        right:5px;
+        top:90px;
+        height:150px;
+    } 
+    .carousel-caption {
+        position:absolute;
+        top:70px;
+        left:20px;
+        height:150px;
+    } 
+    .carousel-indicators {
+        position:absolute;
+        top: 200px;
+        margin:0x;
+        height:0px;
+    }    
+    .container.marketing {
+        margin:auto;
+        justify-content: center;
+    }
+    .carousel-control-next,.carousel-control-prev  {
+        height: 250px;
+    }
+    
+    /* A propos */
+    .container1 {
+        display : block;
+        padding:0;
+        margin:0;
+        width:240px;
+    }
+    .container1 .card_valeurs {
+        align-items: center;
+        justify-content: center;
+    }
+    .container.marketing.mt-5 {
+        margin:0px;
+        margin-left:8px;
+    }
+
+    /* Boutique */
+    .container {
+        margin-left:0px;
+        padding-left:0px;
+    }
+    .img_skin_visage, .img_skin_corps {
+        margin-top:20px;
+        border: 2px solid white;
+        margin-left:0px;
+        width: 280px;
+        height:300px;
+    }
+    .corps_path , .visage_path {
+        margin-bottom:150px;
+    }
+    .Visage_HSkin, .Corps_HSkin {
+        margin:0px;
+        width:50%;
+        margin-left:0px;
+    }
+
+    /* Conseils Beauté */
+    #advice_card {
+        display:block;
+        justify-content: center;
+    }
+    .flip-card-front,.flip-card-front2,.flip-card-front3,.flip-card-front4 {    
+        margin-bottom:10px;
+        margin-top:10px;
+    }
+    .intro2 {
+        margin-left:0px;
+    }
+    .flip-card-container {
+        margin-bottom:20px;
+        margin-left:auto;
+        margin-right:auto;
+        width:270px;
+        height: 300px;
+    }
+
+    /* Suivi commande */
+    img.img_commande {
+        width:260px;
+    }
+
+    /* CG */
+    #title_cgucgv {
+        width:260px;
+        margin-left:0px;
+    }
+
+    /* Mon compte */
+    .bienvenue_user {
+        display:block;
+        justify-content: center;
+    }
+    .account-item {
+        margin-top:20px;
+    }
+}
+
+/* =========== 5ème palier ========== */
+@media screen and (max-width: 259px) {
+    /* Header */
+    .navbar-toggler.collapsed {
+        width: 35px;
+        position: absolute;
+        right: 30px;
+        display:block;
+    }
+    .menu-hamburger {
+        color:white;
+        display: block;
+        border:none;
+    }
+    #first_item {
+        font-size:1rem;
+    }
+    .last_item {
+        font-size: 0.6rem;
+    }
+    .nav-link {
+        font-size:10px;
+    }
+    img.cart-icon {
+        font-size: 10px;
+        height: 10px;
+    }
+
+    /* Footer */
+    .footer_top {
+        display:block;
+        width:100%;
+        height:100%;
+        font-size:13px;
+        margin:0px;
+        padding:0px;
+    }
+    footer ul {
+        width:100%;
+        padding:8px;
+        margin:4px;
+    }
+    footer ul p {
+        margin: 0px;
+    }
+    h6.text-uppercase.fw-bold.mb-4 {
+        font-size:16px;
+        margin: 5px;
+    }
+
+    /* Accueil */
+    h1.carousel_title1 {
+        font-size:18px;
+    }
+    h1.carousel_title {
+        font-size:18px;
+    }
+    p.carousel_para {
+        font-size:10px;
+    }
+    .btn.btn-lg.btn-primary {
+        font-size:13px;
+    }
+    .bd-placeholder-img {
+        margin-top: 20px;
+    }
+    .carousel-item, .carousel-item.active {
+        height: 23rem; 
+    }
+    .carousel-caption.text-right {
+        position:absolute;
+        left:-10px;
+        bottom:-150px;
+        height:300px;
+    } 
+    .carousel-caption.text-left {
+        position:absolute;
+        right:5px;
+        top:150px;
+        height:300px;
+    } 
+    .carousel-caption {
+        position:absolute;
+        top:90px;
+        left:20px;
+        height:300px;
+    } 
+    .carousel-indicators {
+        position:absolute;
+        top: 350px;
+        margin: 0;
+        height:0px;
+    }    
+    .container.marketing {
+        margin:auto;
+        justify-content: center;
+    }
+    .carousel-control-next,.carousel-control-prev  {
+        height: 250px;
+    }
+    
+    /* A propos */
+    .container1 {
+        display : block;
+        padding:0;
+        margin:0;
+        width:250px;
+    }
+    .container1 .card_valeurs {
+        align-items: center;
+        justify-content: center;
+    }
+    .container.marketing.mt-5 {
+        margin:0;
+    }
+
+    /* Boutique */
+    .container {
+        margin-left:0px;
+        padding-left:0px;
+    }
+    .img_skin_visage, .img_skin_corps {
+        margin-top:20px;
+        border: 2px solid white;
+        margin-left:0px;
+        width: 258px;
+        height:300px;
+    }
+
+    .corps_path , .visage_path {
+        margin-bottom:150px;
+    }
+    .Visage_HSkin, .Corps_HSkin {
+        margin:0px;
+        width:50%;
+        margin-left:0px;
+    }
+
+    /* Conseils Beauté */
+    #advice_card {
+        display:block;
+        justify-content: center;
+        
+      }
+    .flip-card-front,.flip-card-front2,.flip-card-front3,.flip-card-front4 {    
+        margin-bottom:10px;
+        margin-top:10px;
+    }
+    .intro2 {
+        margin-left:0px;
+    }
+    .flip-card-container {
+        margin-bottom:20px;
+        margin-left:auto;
+        margin-right:auto;
+        width:249px;
+        height: 290px;
+    }
+
+    /* Mon compte */
+    .bienvenue_user {
+        display:block;
+        justify-content: center;
+    }
+    .account-item {
+        margin-top:20px;
+    }
+}

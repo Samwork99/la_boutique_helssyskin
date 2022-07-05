@@ -1,0 +1,14 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Paiement{% endblock %}
+
+{% block content %}
+
+{# Installation php-librairy #}
+<script src="https://js.stripe.com/v3/"></script>
+
+<script>
+    var stripe = Stripe();
+</script>
+
+{% endblock %}

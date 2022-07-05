@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Mon suivi de commande{% endblock %}
+
+{% block content %}
+<br>
+    <h2>Votre suivi de commande</h2>
+    <hr>
+        <p>Vous retrouverez toutes les informations de vos commmandes passées en vous connectant sur votre compte client HelssySkin.<br><br>
+            <img src="{{ '/img/suivi_commande.png' }}" width="300px" height="200px" alt="suivi_commande" class="img_commande"><br><br>
+        Toute commande passée sur votre compte client est enregistrée sur votre espace HelssySkin. N'hésitez donc pas à vous connecter à votre espace afin de bénéficier d'offres & exclusivités promotionnelles.<br><br>
+        Cumulez également des points de fidélité lors de chaque achat HelssySkin. Ne ratez plus aucune offre en vous connectant sur votre espace!<br><br>
+        Connectez-vous <a href="{{ path('app_login') }}">maintenant!</a>
+        </p>
+<br>
+{% endblock %}
