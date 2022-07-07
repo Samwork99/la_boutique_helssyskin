@@ -5,9 +5,9 @@
 {% block content %}
     <br/>
     <h1>Mon espace personnel</h1><br>
-    {# {% if is_granted('ROLE_ADMIN') %} 
+    {% if is_granted('ROLE_ADMIN') %} 
         <small><a href="/admin">Vous êtes un administrateur, accéder au backoffice ?</a></small><br>
-    {% endif %} #}
+    {% endif %}
     
         <div class="bienvenue_user">Bienvenue " {{ app.user.firstname }} " dans votre espace membre HelssySkin!<br><br><br>
         Sur votre espace personnel, vous pouvez accèder à certaines fonctionnalités de gestion de votre compte.<br><br>En effet, les paramètres de votre compte, vous donne accès depuis votre espace client HelssySkin à la gestion des paramètres ci-dessous.<hr>
