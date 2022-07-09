@@ -17,6 +17,7 @@
         "rollerworks/password-strength-bundle": "^2.2",
         "sensio/framework-extra-bundle": "^6.1",
         "stripe/stripe-php": "^8.7",
+        "symfony/apache-pack": "^1.0",
         "symfony/asset": "6.0.*",
         "symfony/console": "*",
         "symfony/doctrine-messenger": "6.0.*",

@@ -1,3 +1,8 @@
+{# <?php
+    if(isset($_GET['accepte-cookie'])){
+        setcookie('accepte-cookie', 'true', time() + 365*24*3600);
+    }
+?> #}
 <!doctype html>
 <html lang="fr">
 <head>
@@ -232,6 +237,16 @@
             </p>
         </div>
 </footer>
+{# <div class="banniere">
+    <div class="text-banniere">
+        <p>Notre site utilise des cookies pour une meilleure expérience</p>
+    </div>
+    <div class="button-banniere">
+        <a href="#">Ok, j'accepte</a>
+        <a href="#">Continuer sans accepter</a>
+        <a href="#">Refuser</a>
+    </div>
+</div> #}
 </main>
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
