@@ -1,34 +1,28 @@
-{# <?php
-    if(isset($_GET['accepte-cookie'])){
-        setcookie('accepte-cookie', 'true', time() + 365*24*3600);
-    }
-?> #}
-<!doctype html>
-<html lang="fr">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <meta name="description" content="La boutique qui vend uniquement du certifié bio 100%">
-    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-    <meta name="generator" content="Jekyll v4.1.1">
-    <title>{% block title %}HelssySkin{% endblock %}</title>
-    <link rel="icon" href="./images/favicon.ico">
+<!DOCTYPE html>
+    <html lang="fr">
+        <head>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+            <meta name="description" content="La boutique qui vend uniquement du certifié bio 100%">
+            <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+            <meta name="generator" content="Jekyll v4.1.1">
+            <title>{% block title %}HelssySkin{% endblock %}</title>
+            <link rel="icon" href="./images/favicon.ico">
 
-    <!-- Bootstrap core CSS (va me chercher dans le dossier public)-->
-    <link href="{{ asset('assets/css/bootstrap.min.css') }}" rel="stylesheet">
-    <link rel="stylesheet" href="{{ asset('assets/css/helssyskin.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/css/responsive.css') }}">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+            <!-- Bootstrap core CSS (va me chercher dans le dossier public)-->
+            <link href="{{ asset('assets/css/bootstrap.min.css') }}" rel="stylesheet">
+            <link rel="stylesheet" href="{{ asset('assets/css/helssyskin.css') }}">
+            <link rel="stylesheet" href="{{ asset('assets/css/responsive.css') }}">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
 
 
 <!-- NAVBAR -->
-    <link href="{{ asset('assets/css/carousel.css') }}" rel="stylesheet">
-</head>
+            <link href="{{ asset('assets/css/carousel.css') }}" rel="stylesheet">
+        </head>
 <body>
-
 <header>
     <nav class="navbar navbar-expand-md navbar fixed-top bg-dark">
-        <a class="navbar-brand" href="{{ path('home') }}"<span id="first_item">Helssy</span><span class="last_item">Skin</span></a>
+        <a class="navbar-brand" href="{{ path('home') }}" <span id="first_item">Helssy</span><span class="last_item">Skin</span></a>
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"</span><i class="fa-solid fa-bars"></i>
@@ -211,7 +205,7 @@
             <ul>
                 <h6 class="text-uppercase fw-bold mb-4">NOS RESEAUX SOCIAUX</h6>
                     <p>
-                        <a href="https://www.instagram.com/" onclick="window.open(this.href); return false"><img src="{{ asset('img/img_icons/instagram.png') }}" height="23px"</a>
+                        <a href="https://www.instagram.com/" onclick="window.open(this.href); return false"><img src="{{ asset('img/img_icons/instagram.png') }}" height="23px"></a>
                     </p>
                     <p>
                         <a href="https://www.facebook.com/" onclick="window.open(this.href); return false"><img src="{{ asset('img/img_icons/facebook.png') }}" height="23px"></a>
@@ -226,7 +220,7 @@
                         Nous soutenons l'association<br> "Un don, un sourire"<br>
                         1 DON = 1 ENFANT HEUREUX<br>
                         <a href="https://www.helloasso.com/associations/jeune-chambre-economique-haute-mayenne/collectes/un-don-un-sourire" onclick="window.open(this.href); return false;">Visitez leur site!</a>
-                </p>
+                    </p>
             </ul>
         </section>
     </div>
@@ -237,20 +231,30 @@
             </p>
         </div>
 </footer>
-{# <div class="banniere">
-    <div class="text-banniere">
-        <p>Notre site utilise des cookies pour une meilleure expérience</p>
-    </div>
-    <div class="button-banniere">
-        <a href="#">Ok, j'accepte</a>
-        <a href="#">Continuer sans accepter</a>
-        <a href="#">Refuser</a>
-    </div>
-</div> #}
+
+    {# <?php #}
+        {# Si le cookie n'existe pas au nom "accepte-cookie" alr notre bannière s'affiche  #}
+        {# if(!isset($_COOKIE['accepte-cookie'])){   
+    ?> #}
+        <div class="banniere">
+            <div class="text-banniere">
+                <p>Notre site utilise des cookies pour une meilleure expérience</p>
+            </div>
+            <div class="button-banniere">
+                <a href="?accepte-cookie">Ok, j'accepte</a> 
+                <a href="?sans-cookie">Continuer sans accepter</a> 
+                <a href="refuse-cookie">Refuser</a>
+            </div>
+        </div>
+    {# <?php
+        }
+    ?> #}
+
 </main>
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="{{ asset('assets/js/bootstrap.bundle.js') }}"></script>
+
 </body>
 </html>
 

@@ -879,4 +879,34 @@ h6 a.help_links {
 .user_acces a {
     color:blue;
 }
+/* =============================================== Balise Cookies ======================================== */
+.banniere {
+    border: solid 2px white;
+    background-color: #606060;
+    position :fixed;
+    bottom:0;
+    left:0;
+    width:100%;
+    color:white;
+    display:flex;
+    justify-content: space-around;
+    padding:10px;
+    font-family:'Signika Negative', sans serif;
+}
 
+.text-banniere p {
+    font-size:large;
+    font-weight:bold;
+}
+
+.button-banniere {
+    padding-top:15px;
+}
+
+.button-banniere a {
+    border: solid 1px black;
+    padding:10px;
+    background-color: white;
+    color:black;
+    border-radius:7px;
+}
