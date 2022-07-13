@@ -22,7 +22,7 @@ class ResetPasswordController extends AbstractController
         $this->entityManager = $entityManager;   
     }
     
-    // Route pour le MOT DE PASSE OUBLIE :
+    // Route pour le MOT DE PASSE OUBLIE :===============================================================
     #[Route('/mot-de-passe-oublié', name: 'reset_password')]
     public function index(Request $request, Mailer $mailer): Response
     {
@@ -59,7 +59,7 @@ class ResetPasswordController extends AbstractController
         return $this->render('reset_password/index.html.twig');
     }
 
-    // Route pour LA REINITIALISATION DU MDP :
+    // Route pour LA REINITIALISATION DU MDP :==============================================================
     #[Route('/modifier-mon-mot-de-passe/{token}', name: 'update_password')]
     public function update(Request $request, $token, UserPasswordHasherInterface $passwordHasher)
     {

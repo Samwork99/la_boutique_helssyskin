@@ -17,7 +17,7 @@ class CartController extends AbstractController
         $this->entityManager = $entityManager;
     }
 
-    // Route pour accéder à mon panier
+    // Route pour accéder à mon panier===============================================
     #[Route('/mon-panier', name: 'cart')]
     public function index(Cart $cart): Response
     {
@@ -26,7 +26,7 @@ class CartController extends AbstractController
         ]);
     }
 
-    // Route pour ajouter des produits à mon panier
+    // Route pour ajouter des produits à mon panier===================================
     #[Route('/cart/add/{id}', name: 'add_cart')]
     public function add(Cart $cart, $id): Response
     {
@@ -35,7 +35,7 @@ class CartController extends AbstractController
         return $this->redirectToRoute('cart');
     }
 
-    // Route pour supprimer tout mon panier
+    // Route pour supprimer tout mon panier============================================
     #[Route('/cart/remove', name: 'remove_cart')]
     public function remove(Cart $cart): Response
     {
@@ -44,7 +44,7 @@ class CartController extends AbstractController
         return $this->redirectToRoute('products');
     }
 
-    // Route pour supprimer un produit un à un (1 ligne de mon panier seulement)
+    // Route pour supprimer un produit un à un (1 ligne de mon panier seulement)=========
     #[Route('/cart/delete/{id}', name: 'delete_cart')]
     public function delete(Cart $cart, $id): Response
     {
@@ -53,7 +53,7 @@ class CartController extends AbstractController
         return $this->redirectToRoute('cart');
     }
 
-    // Route pour diminuer ma quantité de un en un (décrémentation négative)
+    // Route pour diminuer ma quantité de un en un (décrémentation négative)==============
     #[Route('/cart/decrease/{id}', name: 'decrease_cart')]
     public function decrease(Cart $cart, $id): Response
     {

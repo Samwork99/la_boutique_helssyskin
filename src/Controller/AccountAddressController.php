@@ -26,7 +26,7 @@ class AccountAddressController extends AbstractController
         return $this->render('account/address.html.twig');
     }
 
-
+    // =========================================================================
     // Pour ajouter des adresses ADD
     #[Route('/compte/ajout-adresses', name: 'add_address')]
     public function add(Cart $cart, Request $request): Response
@@ -52,7 +52,7 @@ class AccountAddressController extends AbstractController
         ]);
     }
 
-
+    // ==========================================================================
     // Pour modifier une adresse EDIT
     #[Route('/compte/modifier-adresses/{id}', name: 'edit_address')]
     public function edit(Request $request, $id): Response
@@ -79,7 +79,7 @@ class AccountAddressController extends AbstractController
             'form' => $form->createView()
         ]);
     }
-
+    // ======================================================================
     // Pour supprimer une adresse DELETE
     #[Route('/compte/supprimer-adresses/{id}', name: 'delete_address')]
     public function delete($id): Response

@@ -15,16 +15,16 @@ class ContactController extends AbstractController
     #[Route('/nous-contacter', name: 'contact')]
     public function index(Request $request, Mailer $mailer): Response
     {
-        // Initialisation de mon form
+        // Initialisation de mon form 
         $form = $this->createForm(ContactType::class);
         $form->handleRequest($request);
 
-        // Vérification du form
+        // Vérification du form 
         if ($form->isSubmitted() && $form->isValid()) {
 
             // dd($form->getData());
 
-            // Formulaire de contact
+            // Formulaire de contact 
             $mailer->send('Votre nouvelle demande de contact', 'contact@helssyskin.fr', $form->get('email')->getData(), 'mailer/contact.html.twig', [ 
                 'nom'=> $form->get('nom')->getData(),
                 'prenom' => $form->get('prenom')->getData(),
@@ -34,7 +34,7 @@ class ContactController extends AbstractController
             $this->addFlash('notice', 'Merci de nous avoir contacté. Notre équipe vous répondra dans les meilleurs délais.');
         }
 
-        // Redirection vers mon formulaire de contact
+        // Redirection vers mon formulaire de contact =
         return $this->render('contact/index.html.twig', [
             'form' => $form->createView(),
         ]);

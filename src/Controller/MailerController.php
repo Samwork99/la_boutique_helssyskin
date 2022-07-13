@@ -11,7 +11,6 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 
 class MailerController extends AbstractController
 {
-    
     // public function index(): Response
     // {
     //     return $this->render('mailer/contact.html.twig');
@@ -23,6 +22,7 @@ class MailerController extends AbstractController
     {
         $formContact = $this->createForm(ContactType::class, null);
         $formContact->handleRequest($request);
+        
         // je vérifie si mon action est valide
         if($formContact->isSubmitted() && $formContact->isValid()) {
             $data = $formContact->getData();
