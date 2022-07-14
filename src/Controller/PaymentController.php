@@ -21,7 +21,7 @@ class PaymentController extends AbstractController
     {
         // 1-Initialisation - Création du chemin pour ma session stripe =======================================================
         $products_for_stripe = [];
-        $YOUR_DOMAIN = 'http://127.0.0.1:8000';
+        $YOUR_DOMAIN = 'https://helssyskin.ibtissam-haidane';
 
         // Récupération de mon order : on a besoin de l'entityManager pour selectionner notre référence en question
         $order = $entityManager->getRepository(Order::class)->findOneByReference($reference);
