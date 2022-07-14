@@ -20,17 +20,17 @@ class HomeController extends AbstractController
                     // '127.0.0.1:8000'); //Nom domaine
                     //  false, //Https seulement
                     //  true); // Disponible uniquement dans le protocole HTTP
-                    header('Location:./');
+                    // header('Location:./');
         // }
         
         $res = new Response();
         $res->headers->setCookie( $cookie );
         $res->send();
 
-
-        $res = new Response();
-        $res->headers->clearCookie('my_old_cookie');
-        $res->send();
+        // Condition d'effacer le cookie à la fermerture du navigateur
+        // $res = new Response();
+        // $res->headers->clearCookie('my_old_cookie');
+        // $res->send();
         
         return $this->render('home/index.html.twig');
     }
