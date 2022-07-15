@@ -17,13 +17,22 @@ class AddressType extends AbstractType
     {
         $builder
             ->add('name', TextType::class, [
-                'label'=> 'Quel nom souhaitez-vous donner à votre adresse ?'
+                'label'=> 'Quel nom souhaitez-vous donner à votre adresse ?',
+                'attr' => [
+                    'placeholder' => 'Ex : Adresse principale'
+                ]
             ])
             ->add('firstname', TextType::class, [
-                'label'=> 'Votre prénom'
+                'label'=> 'Votre prénom',
+                'attr' => [
+                    'placeholder' => 'Saississez votre nom'
+                ]
             ])
             ->add('lastname', TextType::class, [
-                'label'=> 'Votre nom'
+                'label'=> 'Votre nom',
+                'attr' => [
+                    'placeholder' => 'Saississez votre prénom'
+                ]
             ])
             ->add('compagny', TextType::class, [
                 'label'=> 'Si vous avez une société, entrez son nom',
@@ -33,19 +42,30 @@ class AddressType extends AbstractType
                 ]
             ])
             ->add('address', TextType::class, [
-                'label'=> 'Votre adresse'
+                'label'=> 'Votre adresse',
+                'attr' => [
+                    'placeholder' => 'Entrez votre adresse'
+                ]
             ])
             ->add('postal', TextType::class, [
-                'label'=> 'Code postal'
+                'label'=> 'Code postal',
+                'attr' => [
+                    'placeholder' => 'Entrez votre code postal'                ]
             ])
             ->add('city', TextType::class, [
-                'label'=> 'Ville'
+                'label'=> 'Ville',
+                'attr' => [
+                    'placeholder' => 'Entrez votre ville'
+                ]
             ])
             ->add('country', CountryType::class, [
-                'label'=> 'Pays'
+                'label'=> 'Pays',
             ])
             ->add('phone', TelType::class, [
-                'label'=> 'Votre numéro'
+                'label'=> 'Votre numéro',
+                'attr' => [
+                    'placeholder' => 'Saisir votre numéro'
+                ]
             ])
             ->add('submit', SubmitType::class, [
                 'label' => 'Valider',

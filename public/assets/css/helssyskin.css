@@ -853,6 +853,16 @@ h2.title_register {
     border-radius: 10px;
 } 
 
+
+#address_name.form-control, #address_lastname.form-control, #address_firstname.form-control, #address_address.form-control, #address_postal.form-control, #address_city.form-control, #address_phone.form-control  {
+    font-size:12px;
+    font-style:italic;
+}
+
+#address_country.form-control {
+    list-style:'France';
+}
+
 h2.title_mdp {
     text-align:center;
     color:white;
