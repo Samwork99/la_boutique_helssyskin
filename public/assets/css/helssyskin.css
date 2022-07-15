@@ -91,7 +91,7 @@ a {
 
 a:hover {
     color:blue;
-    transform: scale(1.1);
+    transform: scale(1.02);
 }
 
 h6.text-uppercase.fw-bold.mb-4 {
@@ -234,7 +234,7 @@ h1.carousel_title1 {
 }
 
 h1.carousel_title {
-    color:white;
+    color:whitesmoke;
     font-weight:bold;
     font-size:35px;
     text-shadow:3px 2px 4px black;
@@ -242,7 +242,7 @@ h1.carousel_title {
 }
 
 p.carousel_para {
-    color:white;
+    color:whitesmoke;
     font-weight:bold;
     font-size:25px;
     text-shadow:3px 2px 4px black;
@@ -250,11 +250,18 @@ p.carousel_para {
 }
 
 .button_para .btn.btn-secondary {
-    background: #d36e70;
+    background: #b85c5f;
+    border-color:whitesmoke;
 }
 
 p.circle_para {
     text-align:justify;
+    overflow-y:scroll;
+    text-overflow:ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    line-clamp:4;
+    -webkit-box-orient: vertical; 
 }
 
 /* ============================================= A PROPOS ================================================= */
@@ -263,7 +270,7 @@ img.featurettes {
 }
 
 h2.featurette-heading {
-    color: white;
+    color: whitesmoke;
 }
 
 h2.featurette-heading span {
@@ -279,11 +286,11 @@ p.lead {
 }
 
 h2.featurette-heading span.text-muted {
-    color:white;
+    color:whitesmoke;
 }
 
 h2.titre_valeurs {
-    color: white;
+    color: whitesmoke;
     font-style:italic;
     margin-left:30px;
     font-weight:bold;
@@ -368,7 +375,7 @@ section.about_valeurs {
 .info_valeurs {
 	position: relative;
 	z-index: 3;
-	color: white;
+	color: whitesmoke;
 	opacity: 0;
 	transform: translateY(30px);
 	transition: 0.5s;
@@ -401,13 +408,13 @@ img.Corps_HSkin {
     border-radius: 10px;
     width: 750px;
     height:400px;
-    border: 2px solid white;
+    border: 2px solid whitesmoke;
     margin-top:20px;
 }
 
 h4.visage_path, h4.corps_path {
     text-shadow:1px 1px 4px black;
-    color:white;
+    color:whitesmoke;
 }
 
 /* ============================================ PRODUITS (Visage & Corps) ================================= */
@@ -498,7 +505,7 @@ h4.visage_path, h4.corps_path {
 }
 
 h2.titre_conseils {
-    color:white;
+    color:whitesmoke;
     justify-content: center;
     font-weight:bold;
     font-style:italic;
@@ -512,7 +519,7 @@ h3.article_1, h3.article_2 {
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-style:italic;
     text-align: center;
-    color:white;
+    color:whitesmoke;
     font-size:25px medium;
     font-weight:bold;
 }
@@ -592,7 +599,7 @@ h3.article_1, h3.article_2 {
 }
 
 .flip-card-back {
-    color: white;
+    color: whitesmoke;
     background-color: #FAACA8;
     background-image: linear-gradient(19deg, #FAACA8 0%, #DDD6F3 100%);
     transform: rotateY(180deg);
@@ -693,7 +700,7 @@ a.link_products {
 
 h2.title_contact {
     text-align:center;
-    color:white;
+    color:whitesmoke;
     padding-bottom:8px;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; ;
 }
@@ -701,7 +708,7 @@ h2.title_contact {
 h3.title_contact {
     text-shadow: 1px 1px 1px black;
     text-align:center;
-    color:white;
+    color:whitesmoke;
     padding-bottom:8px;
     font-weight:bold;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; ;
@@ -735,6 +742,10 @@ p.flash_message {
 #contact_content.form-control, #contact_nom.form-control, #contact_prenom.form-control, #contact_email.form-control  {
     font-size:12px;
     font-style:italic;
+}
+
+.fit-picture {
+    width:100px;
 }
 
 /* =========== CONNEXION =============*/
@@ -774,13 +785,36 @@ p.flash_message {
     margin: 0 auto;
 }
 
+#register_lastname.form-control, #register_firstname.form-control, #register_number.form-control, #register_address.form-control, #register_zip.form-control, #register_city.form-control, #register_email.form-control  {
+    font-size:12px;
+    font-style:italic;
+}
+
 .col-md-10 {
     margin:auto;
 }
 
+/* .col-md-5 {
+    margin:auto;
+    display:inline-block;
+    margin-left:25px;
+    margin-right:10px;
+    padding:0px;
+} */
+
 .form-label.required {
     font-style:italic;
 }
+
+.form-check-label.required {
+    font-size:15px;
+    color:#3c3c3c;
+    font-style:italic;
+}
+
+/* .form-check-label.required:hover {
+    text-decoration:underline;
+} */
 
 h2.title_register {
     text-align:center;

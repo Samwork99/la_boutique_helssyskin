@@ -25,13 +25,20 @@ class RegisterType extends AbstractType
         $builder
             ->add('lastname', TextType::class, [
                 'label' => 'Nom',
+                'attr' => [
+                    'placeholder' =>'Entrez votre nom',
+                ],
                 'constraints' => new Length([
                     'min' => 2,
                     'max' => 30,
                 ]),
             ])
+
             ->add('firstname', TextType::class, [
                 'label' => 'Prénom',
+                'attr' => [
+                    'placeholder' =>'Entrez votre prénom',
+                ],
                 'constraints' => new Length([
                     'min' => 2,
                     'max' => 30,
@@ -39,18 +46,33 @@ class RegisterType extends AbstractType
             ])
             ->add('number', TelType::class, [
                 'label' => 'Votre numéro',
+                'attr' => [
+                    'placeholder' =>'Saississez votre numéro de téléphone ou portable',
+                ],
             ])
             ->add('address', TextType::class, [
-                'label' => 'Adresse', 
+                'label' => 'Adresse',
+                'attr' => [
+                    'placeholder' =>'Saississez votre adresse principale',
+                ],
             ]) 
             ->add('zip', TextType::class, [
                 'label' => 'Code postal',
+                'attr' => [
+                    'placeholder' =>'Saississez votre code postal',
+                ],
             ])
             ->add('city', TextType::class, [
                 'label' => 'Ville',
+                'attr' => [
+                    'placeholder' =>'Saississez votre ville',
+                ],
             ])
             ->add('email', EmailType::class, [
                 'label' => 'Votre email',
+                'attr' => [
+                    'placeholder' =>'Saississez votre adresse e-mail active',
+                ],
                 'constraints' => new Length([
                     'min' => 2,
                     'max' => 50,
@@ -76,11 +98,11 @@ class RegisterType extends AbstractType
                 ]
             ])
             ->add('agreeTerms', CheckboxType::class, [
-                'label' => "j'accepte les conditions générales d'utilisation.",
+                'label' => "j'accepte les conditions générales d'utilisation",
                 'mapped' => false,
                 'constraints' => [
                     new IsTrue([
-                        'message' => "j'accepte les conditions générales d'utilisation."]),
+                        'message' => "j'accepte les conditions générales d'utilisation"]),
                 ]
             ])
             ->add('submit', SubmitType::class, [
