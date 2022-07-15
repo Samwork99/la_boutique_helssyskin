@@ -229,24 +229,6 @@
             </p>
         </div>
 </footer>
-
-    {# <?php #}
-        {# Si le cookie n'existe pas au nom "accepte-cookie" alr notre bannière s'affiche  #}
-        {# if(!isset($_COOKIE['accepte-cookie'])){   
-    ?> #}
-        {# <div class="banniere">
-            <div class="text-banniere">
-                <p>Notre site utilise des cookies pour une meilleure expérience</p>
-            </div>
-            <div class="button-banniere">
-                <a href="?accepte-cookie">Ok, j'accepte</a> 
-                <a href="?sans-cookie">Continuer sans accepter</a> 
-                <a href="refuse-cookie">Refuser</a>
-            </div>
-        </div> #}
-    {# <?php
-        }
-    ?> #}
     
     {% if app.request.cookies.get('accepte-cookie') == false %} 
         <div class="row cookie">
@@ -262,7 +244,7 @@
                 </div>
                 <p class="cookie-text">HekssySkin.com utilise des cookies pour offrir la meilleure expérience possible à l’utilisateur. En utilisant notre site, vous reconnaissez et acceptez notre politique de cookies.
                 </p>
-                <a href="?accepte-cookie" button type="button" class="btn btn-danger w-100">Ok, j'accepte</a></button>
+                <button><a href="?accepte-cookie" type="button" class="btn btn-danger w-100">Ok, j'accepte</a></button>
             </div>
             </div>
         </div>
