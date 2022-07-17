@@ -4,34 +4,34 @@
 
 {% block content %}
 
-<h1></h1>
-<section class="py-5">
-    <div class="container px-4 px-lg-5 my-5">
-        <div class="row gx-4 gx-lg-5 align-items-center">
-            <div class="col-md-6">
-                <img class="card-img-top mb-5 mb-md-0" src="{{ asset("/img/img_products/" ~ product.illustration ) }}" alt="produit" /></div>
-                
+    <h1></h1>
+    <section class="py-5">
+        <div class="container px-4 px-lg-5 my-5">
+            <div class="row gx-4 gx-lg-5 align-items-center">
                 <div class="col-md-6">
-                    <h2 class="display-5 fw-bolder">{{ product.name }}</h2>
-                        <p>{{ product.subtitle }}</p>
-                
-                <div class="fs-5 mb-4">
-                    <span class="price">{{ (product.price / 100) | number_format(2, ',', '.') }} €</span>
-                </div><hr>
+                    <img class="card-img-top mb-5 mb-md-0" src="{{ asset("/img/img_products/" ~ product.illustration ) }}" alt="produit" /></div>
+                    
+                    <div class="col-md-6">
+                        <h2 class="display-5 fw-bolder">{{ product.name }}</h2>
+                            <p>{{ product.subtitle }}</p>
+                    
+                    <div class="fs-5 mb-4">
+                        <span class="price">{{ (product.price / 100) | number_format(2, ',', '.') }} €</span>
+                    </div><hr>
 
-                    <p class="lead">{{ product.description }}</p>
+                        <p class="lead">{{ product.description }}</p>
 
-                <div class="buttons d-flex justify-content-center" id="button_strap">
-                    <input class="form-control text-center me-3" id="inputQuantity" type="num" value="1" style="max-width: 3rem"/>
-                    <a href="{{ path('add_cart', { 'id' : product.id }) }}" class="btn btn-primary">Ajouter au panier</a></div>
+                    <div class="buttons d-flex justify-content-center" id="button_strap">
+                        <input class="form-control text-center me-3" id="inputQuantity" type="num" value="1" style="max-width: 3rem"/>
+                        <a href="{{ path('add_cart', { 'id' : product.id }) }}" class="btn btn-primary">Ajouter au panier</a></div>
 
-                {# <div class="d-flex">
-                    <button <a href="{{ path('add_cart', { 'id' : product.id }) }}" class="btn btn-primary">?Ajouter au panier</a> #}
-                    {# <a href="{{ path('add_cart', { 'id' : product.id }) }}" class="btn btn-primary flex-shrink-0" type="button">Ajouter au panier</a> #}
-                    {# </button> #}
+                    {# <div class="d-flex">
+                        <button <a href="{{ path('add_cart', { 'id' : product.id }) }}" class="btn btn-primary">?Ajouter au panier</a> #}
+                        {# <a href="{{ path('add_cart', { 'id' : product.id }) }}" class="btn btn-primary flex-shrink-0" type="button">Ajouter au panier</a> #}
+                        {# </button> #}
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 {% endblock %}

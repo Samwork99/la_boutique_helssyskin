@@ -3,26 +3,26 @@
 {% block title %}Notre boutique{% endblock %}
 
 {% block content %}
-<br/>
-<h1>Nos produits HelssySkin</h1>
+    <br/>
+    <h1>Nos produits HelssySkin</h1>
 
-<div class="container">
-    <div id="container_products" class="row">
-    {% for product in products %}
-        <div class="card">
-           <img class="card-img-top" src="{{ asset('/img/img_products/' ~ product.illustration) }}" height="230" alt="Card image cap"></a>
-            <div class="card-body">
-                <h5 class="card-title">{{ product.name }}</h5> 
-                    <h6 class="card-price">{{ (product.price / 100) |number_format(2, ',', '.') }} €</h6>
-                        <p class="card-text">{{ product.description|u.truncate(30, '...', false) }}</p>
-        
-                <div class="buttons d-flex justify-content-center" id="button_strap">
-                    <a href="{{ path('show_product', {'slug' : product.slug}) }}" class="btn btn-secondary">Voir</a>
-                    <a href="{{ path('add_cart', { 'id' : product.id }) }}" class="btn btn-primary">Ajouter au panier</a></div>
+    <div class="container">
+        <div id="container_products" class="row">
+        {% for product in products %}
+            <div class="card">
+            <img class="card-img-top" src="{{ asset('/img/img_products/' ~ product.illustration) }}" height="230" alt="Card image cap"></a>
+                <div class="card-body">
+                    <h5 class="card-title">{{ product.name }}</h5> 
+                        <h6 class="card-price">{{ (product.price / 100) |number_format(2, ',', '.') }} €</h6>
+                            <p class="card-text">{{ product.description|u.truncate(30, '...', false) }}</p>
+            
+                    <div class="buttons d-flex justify-content-center" id="button_strap">
+                        <a href="{{ path('show_product', {'slug' : product.slug}) }}" class="btn btn-secondary">Voir</a>
+                        <a href="{{ path('add_cart', { 'id' : product.id }) }}" class="btn btn-primary">Ajouter au panier</a></div>
+                </div>
             </div>
+        {% endfor %}
         </div>
-    {% endfor %}
     </div>
-</div>
 {% endblock %}
 

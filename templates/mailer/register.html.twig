@@ -3,28 +3,13 @@
     <div class="col-lg-4">
         {# <img src="https://127.0.0.1:8000/public/img/fleur_lotus.png" alt="fleur_lotus"> #}
         <h4>HelssySkin</h4><hr/>
-        <p>Bonjour,<br/>
-        <br/>
-            Votre inscription a bien été prise en compte.<br/>
-        <br/>Bienvenue chez HelssySkin! Vous pouvez dès à présent vous connecter <a href="https://127.0.0.1:8000/register">à votre compte</a>.
-        <br/><br/>
-            Cordialement,<br/>
-            L'équipe HelssySkin
-        </p>
+            <p>Bonjour,<br/>
+                <br/>
+                Votre inscription a bien été prise en compte.<br/>
+                <br/>Bienvenue chez HelssySkin! Vous pouvez dès à présent vous connecter <a href="{{ path('app_login') }}">à votre compte</a>.
+                <br/><br/>
+                Cordialement,<br/>
+                L'équipe HelssySkin
+            </p>
     </div>
 </div>
-
-
-
-{# 
- //     $mail = new Mail();
- //     $content = "Bonjour".$user->getFirstname()."Bienvenue sur la boutique dédiée à soigner votre peau naturellement à l'aide de produits certifiés bio et sains quelque soit votre type de peau.";
- //     $mail->send($user->getEmail(), $user->getFirstname(), 'Bienvenue sur la boutique HelssySkin', $content);
-
- //     $notification = "Votre inscription a bien été prise en compte. Bienvenue chez HelssySkin! Vous pouvez dès à présent vous connecter à votre compte.";
- // } else {
-
- //     $notification = "L'email renseigné existe déjà!";
- // }
-}
- // return $this->redirectToRoute('home'); #}
